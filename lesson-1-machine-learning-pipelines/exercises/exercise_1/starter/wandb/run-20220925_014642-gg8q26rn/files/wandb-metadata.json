@@ -1,0 +1,25 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-09-24T23:46:43.599776",
+    "startedAt": "2022-09-24T23:46:42.929688",
+    "docker": null,
+    "cpu_count": 2,
+    "cuda": null,
+    "args": [
+        "--artifact_name",
+        "exercise_1/zen_of_python:v1"
+    ],
+    "state": "running",
+    "program": "use_artifact.py",
+    "codePath": "lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py",
+    "git": {
+        "remote": "https://github.com/gariciodaro/cd0581-building-a-reproducible-model-workflow-exercises.git",
+        "commit": "c0d27535724e36f56461c4fa94a8e6a222770c2e"
+    },
+    "email": null,
+    "root": "/home/gjciodaro/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "DESKTOP-D3F26CB",
+    "username": "gjciodaro",
+    "executable": "/home/gjciodaro/miniconda3/envs/udacity/bin/python"
+}

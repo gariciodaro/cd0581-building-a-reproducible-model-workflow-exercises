@@ -1,5 +1,7 @@
+2022-09-25 01:44:31,233 Getting artifact
+2022-09-25 01:44:31,869 Artifact content:
+2022-09-25 01:44:32,316 let us see filepath: ./artifacts/zen_of_python:v1/zen.txt
 The Zen of Python, by Tim Peters
-
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.

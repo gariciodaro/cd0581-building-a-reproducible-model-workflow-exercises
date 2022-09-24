@@ -1,5 +1,7 @@
+2022-09-25 01:43:31,833 Getting artifact
+2022-09-25 01:43:32,500 Artifact content:
+2022-09-25 01:43:33,047 Type of file filepath: <class 'str'>
 The Zen of Python, by Tim Peters
-
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.

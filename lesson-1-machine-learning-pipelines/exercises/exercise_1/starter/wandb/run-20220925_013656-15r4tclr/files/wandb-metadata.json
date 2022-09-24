@@ -1,0 +1,31 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-09-24T23:36:57.208343",
+    "startedAt": "2022-09-24T23:36:56.502332",
+    "docker": null,
+    "cpu_count": 2,
+    "cuda": null,
+    "args": [
+        "--input_file",
+        "zen.txt",
+        "--artifact_name",
+        "zen_of_python",
+        "--artifact_type",
+        "text_file",
+        "--artifact_desc",
+        "20 aphorisms abour writing godd python code"
+    ],
+    "state": "running",
+    "program": "upload_artifact.py",
+    "codePath": "lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py",
+    "git": {
+        "remote": "https://github.com/gariciodaro/cd0581-building-a-reproducible-model-workflow-exercises.git",
+        "commit": "c0d27535724e36f56461c4fa94a8e6a222770c2e"
+    },
+    "email": null,
+    "root": "/home/gjciodaro/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "DESKTOP-D3F26CB",
+    "username": "gjciodaro",
+    "executable": "/home/gjciodaro/miniconda3/envs/udacity/bin/python"
+}
