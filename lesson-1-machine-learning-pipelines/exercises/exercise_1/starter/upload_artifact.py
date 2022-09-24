@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 import argparse
+from ast import arg
 import logging
 import pathlib
+from re import A, T
 import wandb
 
 
@@ -12,23 +14,21 @@ logger = logging.getLogger()
 def go(args):
 
     logger.info("Creating run exercise_1")
+    run = wandb.init(project="exercise_1", job_type="upload_file")
 
-    # Create a W&B run in the project ``exercise_1``. Set the option ``job_type="upload_file"``:
+    logger.info("creating artifact object")
+    artifact = wandb.Artifact(
+        name=arg.artifact_name, type=arg.artifact_type, description=arg.artifact_desc
+    )
 
-    # YOUR CODE HERE
+    logger.info("adding path to artifact object")
+    artifact.add_file(local_path=arg.input_file)
 
-    # Create an instance of the class ``wandb.Artifact``. Use the ``artifact_name`` parameter to fill
-    # the keyword ``name`` when constructing the wandb.Artifact class.
-    # Use the parameters ``artifact_type`` and ``artifact_desc`` to fill respectively the keyword
-    # ``type`` and ``description``
-    # HINT: you can use args.artifact_name to reference the parameter artifact_name
+    logger.info("adding artifact object to run object")
+    run.log_artifact(artifact)
 
-    # YOUR CODE HERE
-
-    # Attach the file provided as the parameter ``input_file`` to the artifact instance using
-    # ``artifact.add_file``, and log the artifact to the run using ``run.log_artifact``.
-
-    # YOUR CODE HERE
+    logger.info("Closing run")
+    run.finish()
 
 
 if __name__ == "__main__":
@@ -49,7 +49,7 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "--artifact_description",
+        "--artifact_desc",
         type=str,
         help="Description for the artifact",
         required=True,
