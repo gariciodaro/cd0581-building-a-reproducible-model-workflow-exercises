@@ -1,0 +1,7 @@
+2022-09-25 01:27:31,672 creating artifact object
+Traceback (most recent call last):
+  File "upload_artifact.py", line 60, in <module>
+    go(args)
+  File "upload_artifact.py", line 21, in go
+    name=arg.artifact_name, type=arg.artifact_type, description=arg.artifact_desc
+AttributeError: type object 'arg' has no attribute 'artifact_name'

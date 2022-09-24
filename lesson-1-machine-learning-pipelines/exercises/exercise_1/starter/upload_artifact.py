@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 import argparse
-from ast import arg
 import logging
 import pathlib
-from re import A, T
 import wandb
 
 
@@ -18,11 +16,11 @@ def go(args):
 
     logger.info("creating artifact object")
     artifact = wandb.Artifact(
-        name=arg.artifact_name, type=arg.artifact_type, description=arg.artifact_desc
+        name=args.artifact_name, type=args.artifact_type, description=args.artifact_desc
     )
 
     logger.info("adding path to artifact object")
-    artifact.add_file(local_path=arg.input_file)
+    artifact.add_file(local_path=args.input_file)
 
     logger.info("adding artifact object to run object")
     run.log_artifact(artifact)
