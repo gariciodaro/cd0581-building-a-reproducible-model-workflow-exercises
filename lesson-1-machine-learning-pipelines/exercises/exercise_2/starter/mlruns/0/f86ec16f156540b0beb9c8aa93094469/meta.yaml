@@ -1,0 +1,15 @@
+artifact_uri: file:///home/gjciodaro/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/starter/mlruns/0/f86ec16f156540b0beb9c8aa93094469/artifacts
+end_time: 1664128745992
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: f86ec16f156540b0beb9c8aa93094469
+run_uuid: f86ec16f156540b0beb9c8aa93094469
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1664128711032
+status: 4
+tags: []
+user_id: gjciodaro

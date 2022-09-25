@@ -1,0 +1,31 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-09-25T18:07:25.038136",
+    "startedAt": "2022-09-25T18:07:24.069595",
+    "docker": null,
+    "cpu_count": 2,
+    "cuda": null,
+    "args": [
+        "--file_url",
+        "https://raw.githubusercontent.com/scikit-learn/scikit-learn/4dfdfb4e1bb3719628753a4ece995a1b2fa5312a/sklearn/datasets/data/iris.csv",
+        "--artifact_name",
+        "iris",
+        "--artifact_type",
+        "raw_data",
+        "--artifact_description",
+        "This data sets consists of 3 different types of irises\u2019 (Setosa, Versicolour, and Virginica) petal and sepal length"
+    ],
+    "state": "running",
+    "program": "download_data.py",
+    "codePath": "lesson-1-machine-learning-pipelines/exercises/exercise_2/starter/download_data.py",
+    "git": {
+        "remote": "https://github.com/gariciodaro/cd0581-building-a-reproducible-model-workflow-exercises.git",
+        "commit": "9feada51b86782472c3468060d64c7d482d05611"
+    },
+    "email": null,
+    "root": "/home/gjciodaro/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "DESKTOP-D3F26CB",
+    "username": "gjciodaro",
+    "executable": "/home/gjciodaro/miniconda3/envs/mlflow-4023c31d744be73aacc1e48210bccd58e0932b6f/bin/python"
+}
