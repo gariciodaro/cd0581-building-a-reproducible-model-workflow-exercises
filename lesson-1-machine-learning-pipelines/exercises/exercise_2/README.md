@@ -33,3 +33,16 @@ python download_data.py \
    
 4. Check in your W&B account that the ``exercise_2`` project has been created, and that there is at
    least one version of the ``iris`` dataset.
+
+5. (Gari). 
++ ``mlflow run /path/to/the/local/folder``
++ ``mlflow run git@github.com/my_username/my_repo.git``
++ ``mlflow run ./my_project -P file_url=https://myurl.com -P artifact_name=my-artifact``
++ ``mlflow run git@github.com/my_username/my_repo.git -v 1.2.3``
+
+```bash
+mlflow run . \
+-P file_url=https://raw.githubusercontent.com/scikit-learn/scikit-learn/4dfdfb4e1bb3719628753a4ece995a1b2fa5312a/sklearn/datasets/data/iris.csv \
+-P artifact_name=iris \
+-P artifact_description="This data sets consists of 3 different types of irises’ (Setosa, Versicolour, and Virginica) petal and sepal length"
+```
