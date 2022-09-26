@@ -1,12 +1,12 @@
 import mlflow
 import os
 import hydra
-from omegaconf import DictConfig
+#from omegaconf import DictConfig
 
 
 # This automatically reads in the configuration
 @hydra.main(config_name='config')
-def go(config: DictConfig):
+def go(config):
 
     # Setup the wandb experiment. All runs will be grouped under this name
     os.environ["WANDB_PROJECT"] = config["main"]["project_name"]
@@ -25,13 +25,16 @@ def go(config: DictConfig):
             "artifact_description": "Input data"
         },
     )
-
-    ##################
-    # Your code here: use the artifact we created in the previous step as input for the `process_data` step
-    # and produce a new artifact called "cleaned_data".
-    # NOTE: use os.path.join(root_path, "process_data") to get the path
-    # to the "process_data" component
-    ##################
+    _ = mlflow.run(
+        os.path.join(root_path, "process_data"),
+        "main",
+        parameters={
+            "input_artifact": "iris.csv:latest",
+            "artifact_name": "cleaned_data.csv",
+            "artifact_type": "processed_data",
+            "artifact_description": "After cleaned Iris"
+        },
+    )
 
 
 
