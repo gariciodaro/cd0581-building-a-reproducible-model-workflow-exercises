@@ -1,0 +1,16 @@
+artifact_uri: file:///home/gjciodaro/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_5/mlruns/0/f87f4384acb44e879ae83dd157ee28fe/artifacts
+deleted_time: null
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: f87f4384acb44e879ae83dd157ee28fe
+run_uuid: f87f4384acb44e879ae83dd157ee28fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677433042835
+status: 1
+tags: []
+user_id: gjciodaro
